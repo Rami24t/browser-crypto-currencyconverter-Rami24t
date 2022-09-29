@@ -2,6 +2,8 @@
 
 Live solution: https://rami24t.github.io/browser-crypto-currencyconverter-Rami24t/
 
+coded by Rami Al-Saadi https://github.com/Rami24t Sep/29/2022
+
 
 # Currency converter
 
