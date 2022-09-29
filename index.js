@@ -6,6 +6,7 @@
 
 let currenciesData = {};
 const selectC = document.querySelector('#c select');
+const inputCC = document.querySelector('#cc input');
 const templateOption = `<option value="BTC">BTC</option>`;
 
 fetch('https://api.coinbase.com/v2/currencies').then(currencies => currencies.json()).then((currencies) => {
@@ -32,12 +33,18 @@ document.body.addEventListener('change', (e) => {
         console.log(e.target.value);
     }
 
+    if (e.target.parentElement.parentElement.id === 'c' && e.target.nodeName == 'SELECT') {
+        renderOutput()
+    }
 })
 
 document.querySelector('button.btn').addEventListener('click', (e) => {
-    document.querySelector('#c input').value = object1.currency;
-    console.log(object1.data.rates[selectC.value]);
+    renderOutput();
 })
+
+function renderOutput() {
+    document.querySelector('#c input').value = (object1.data.rates[selectC.value] * inputCC.value);
+}
 
 
 
@@ -46,6 +53,6 @@ document.querySelector('button.btn').addEventListener('click', (e) => {
 // {
 //     "data": {
 //         "currency": "BTC",
-//             "rates": {
+//          "rates": {
 //             "AED": "70429.408284045401320068",
-//                 "AFN": "1696946.848616789677699248"
+//             "AFN": "1696946.848616789677699248"
