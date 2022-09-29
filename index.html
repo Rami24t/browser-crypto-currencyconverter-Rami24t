@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="all container">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <script src="./index.js" defer></script>
+        <title>Currency Converter</title>
+    </head>
+
+    <body class="container w-50">
+        <header class="text-center my-5 container">
+            <h1>Crypto Currency Converter</h1>
+        </header>
+        <main class="text-center container">
+            <section id="cc" class="my-4">
+                <div class="input-group mb-3">
+                    <label class="input-group-text bg-primary text-light fw-semibold" for="inputGroupSelect01">Crypto-currency</label>
+                    <select class="text-center form-select" id="inputGroupSelect01">
+                        <option selected>Choose Crypto-currency...</option>
+                        <option value="BTC">BTC</option>
+                        <option value="XRP">XRP</option>
+                        <option value="EOS">EOS</option>
+                        <option value="LTC">LTC</option>
+                        <option value="ETH">ETH</option>                    </select>
+                </div>
+                <div class="input-group input-group-md">
+                    <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span> -->
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-md">
+                </div>
+            </section>
+            <section id="c" class="my-4">
+                <div class="input-group mb-3">
+                    <label class="input-group-text bg-danger text-light fw-semibold pe-5" for="inputGroupSelect01">Currency</label>
+                    <select class="text-center form-select" id="inputGroupSelect01">
+                        <option selected>Choose Currency...</option>
+                    </select>
+                </div>
+                <div class="input-group input-group-md">
+                    <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span> -->
+                    <input type="number" class="form-control" disabled aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-md">
+                </div>
+            </section>
+            <button type="button" class="btn btn-primary btn-md fw-semibold">Convert</button>
+        </main>
+        <footer></footer>
+</div>
+</body>
+
+</html>
