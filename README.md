@@ -4,13 +4,12 @@
 https://rami24t.github.io/browser-crypto-currencyconverter-Rami24t/
 
 ## Snapshot
-![Screenshot 2023-05-15 at 21-08-15 Currency Converter](https://github.com/Rami24t/browser-crypto-currencyconverter-Rami24t/assets/103028944/c289c207-d5bc-47e8-9128-8eb13079f998)
+![Screenshot 2023-05-15 at 21-12-22 Currency Converter](https://github.com/Rami24t/browser-crypto-currencyconverter-Rami24t/assets/103028944/b1f281eb-928f-42ff-be53-46cf91bb590e)
 
 
 ##### coded by Rami Al-Saadi https://github.com/Rami24t Sep/29/2022
 
-
-# Currency converter
+## Currency converter challenge instructions
 
 Create a currency converter webpage. The page should convert the given currency to the chosen one.
 
